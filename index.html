@@ -12,8 +12,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Black+Han+Sans&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/motion.css">
 <script src="config.js"></script>
 <script src="assets/site.js" defer></script>
+<script src="assets/motion.js" defer></script>
 </head>
 <body data-page="home">
 <main id="main">
@@ -27,10 +29,53 @@
   </div>
 </section>
 
+<section class="sec reel-sec" data-scene aria-label="쇼릴">
+  <div class="metaline"><span>FIG. 00 — SHOWREEL</span><span>PROMPT × 1 · 15.00 SEC</span></div>
+  <div class="reel" tabindex="0" aria-label="쇼릴 — 스페이스로 재생·멈춤, 좌우 화살표로 장면 이동">
+    <div class="screen">
+      <div class="crop" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="rmeta" aria-hidden="true"><span>CLAUDE — MOTION REEL '26</span><span class="rsc">SC 01 / 06</span></div>
+      <div class="scenes"></div>
+      <div class="rbottom" aria-hidden="true"><span class="rtc">00:00.00</span><span class="rbar"><b></b></span><span>15.00 SEC</span></div>
+    </div>
+    <div class="controls">
+      <button class="pill rplay" type="button">❚❚ PAUSE</button>
+      <div class="scrub" role="slider" tabindex="-1" aria-label="재생 위치" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><b></b></div>
+      <span class="rtime">00:00.00 / 00:15.00</span>
+    </div>
+  </div>
+</section>
+
+
 <section class="sec" data-scene>
   <div class="metaline figs-meta"><span class="l">FIG. 01-04 — INDEX</span><span>04 SECTIONS</span></div>
   <div class="figs"></div>
 </section>
+
+<section class="story" data-scene aria-label="스크롤 장면 — 내리는 만큼 진행">
+  <div class="story-pin">
+    <div class="metaline"><span>FIG. 02 — SCROLL STORY</span><span class="st-pct">SCROLL 000%</span></div>
+    <div class="st-stage">
+      <svg class="st-svg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path class="st-path" d="M0 540 C 260 540, 240 90, 500 90 S 760 470, 1000 130"/>
+        <circle class="st-dot" r="10" fill="var(--point)"/>
+      </svg>
+      <p class="st-word">모으고</p>
+      <p class="st-word">기록하고</p>
+      <p class="st-word">만들고</p>
+      <p class="st-word">나누고<span class="dot" aria-hidden="true"></span></p>
+      <div class="st-side"><span class="st-num">01 / 04</span>COLLECT → WRITE<br>→ WORKS → SHOP</div>
+    </div>
+    <div class="st-rail"><div class="st-track">
+      <a class="st-card" href="collect.html"><b>수집</b><span>01 COLLECT</span></a>
+      <a class="st-card" href="blog.html"><b>블로그</b><span>02 WRITE</span></a>
+      <a class="st-card" href="works.html"><b>성과물</b><span>03 WORKS</span></a>
+      <a class="st-card" href="shop.html"><b>상점</b><span>04 SHOP</span></a>
+      <span class="st-big" data-scroll-wdth aria-hidden="true">ARCHIVE</span>
+    </div></div>
+  </div>
+</section>
+
 
 <section class="kinetic ink on-ink-sec" data-scene aria-label="움직이는 글자">
   <div class="k-meta"><span>KINETIC TYPE</span><span>SCROLL = SPEED</span></div>
