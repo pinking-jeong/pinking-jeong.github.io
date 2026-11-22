@@ -1,0 +1,23 @@
+name: collect-feeds
+on:
+  schedule:
+    - cron: "10 21 * * *"   # 매일 06:10 KST (GitHub 예약은 늦게 돌 때가 있음)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/fetch_feeds.py
+      - name: commit
+        run: |
+          git config user.name "archive-bot"
+          git config user.email "archive-bot@users.noreply.github.com"
+          git add data/feed.json
+          git diff --cached --quiet || git commit -m "chore: 새 글 모음 갱신"
+          git push

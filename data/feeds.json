@@ -1,0 +1,22 @@
+[
+ {
+  "name": "38 North",
+  "url": "https://www.38north.org/feed/"
+ },
+ {
+  "name": "IAEA",
+  "url": "https://www.iaea.org/feeds/topnews"
+ },
+ {
+  "name": "CNS",
+  "url": "https://www.nonproliferation.org/feed/"
+ },
+ {
+  "name": "Simon Willison",
+  "url": "https://simonwillison.net/atom/everything/"
+ },
+ {
+  "name": "Hacker News",
+  "url": "https://hnrss.org/frontpage?points=300"
+ }
+]

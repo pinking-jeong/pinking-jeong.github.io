@@ -1,0 +1,7 @@
+[
+ {"title": "HTML 발표 템플릿 팩", "short": "발표 템플릿", "kind": "TEMPLATE", "price": "₩—", "format": "HTML · 브라우저에서 바로 편집", "desc": "이 사이트와 같은 결의 발표 템플릿 묶음 자리입니다.", "points": ["크림·먹·주황 세 가지 색 체계", "모노 메타·재단선 틀", "16:9 · 키보드로 넘기기"], "buy_url": "", "sample": true},
+ {"title": "연구 보고서 서식 키트", "short": "보고서 서식", "kind": "TEMPLATE", "price": "₩—", "format": "DOCX · HWPX", "desc": "보고서·논문 원고용 서식 모음 자리입니다.", "points": ["표·그림 번호 자동", "참고문헌 양식", "한글 줄바꿈 정리"], "buy_url": "", "sample": true},
+ {"title": "모션 그래픽 프롬프트 노트", "short": "프롬프트 노트", "kind": "E-BOOK", "price": "₩—", "format": "PDF", "desc": "말로 주문해 만든 움직임들의 프롬프트를 묶은 책 자리입니다.", "points": ["장면별 프롬프트 원문", "곡선·간격·리듬 메모", "결과 화면 캡처"], "buy_url": "", "sample": true},
+ {"title": "아카이브 사이트 소스", "short": "사이트 소스", "kind": "TEMPLATE", "price": "₩—", "format": "HTML · CSS · JS", "desc": "이 홈페이지 같은 개인 아카이브를 바로 띄우는 소스 자리입니다.", "points": ["설정 칸 하나로 색·글꼴 바꾸기", "블로그·수집·상점 쪽 포함", "GitHub Pages 무료 공개"], "buy_url": "", "sample": true},
+ {"title": "책 한 권 자리", "short": "책", "kind": "BOOK", "price": "₩—", "format": "종이책 · 전자책", "desc": "쓴 책이 생기면 여기에 놓습니다.", "points": ["판매처 주소만 넣으면 단추가 켜짐"], "buy_url": "", "sample": true}
+]

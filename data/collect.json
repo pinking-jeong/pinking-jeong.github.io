@@ -1,0 +1,14 @@
+[
+ {"title": "IAEA 안전조치(Safeguards) 개요", "url": "https://www.iaea.org/topics/safeguards-explained", "source": "IAEA", "tags": ["핵비확산"], "note": "안전조치가 무엇이고 어떻게 운영되는지 기본 설명.", "added": "2026-11-22"},
+ {"title": "38 North — 북한 분석", "url": "https://www.38north.org/", "source": "38 North", "tags": ["북한", "위성영상"], "note": "위성영상을 곁들인 북한 시설·정책 분석.", "added": "2026-11-22"},
+ {"title": "Arms Control Association", "url": "https://www.armscontrol.org/", "source": "ACA", "tags": ["핵비확산", "군비통제"], "note": "군비통제 현안과 조약 자료를 정리하는 곳.", "added": "2026-11-22"},
+ {"title": "James Martin CNS", "url": "https://www.nonproliferation.org/", "source": "CNS", "tags": ["핵비확산", "OSINT"], "note": "비확산 연구와 오픈소스 분석.", "added": "2026-11-22"},
+ {"title": "CSIS Beyond Parallel", "url": "https://beyondparallel.csis.org/", "source": "CSIS", "tags": ["북한", "위성영상"], "note": "한반도 관련 데이터·영상 분석.", "added": "2026-11-22"},
+ {"title": "Anthropic News", "url": "https://www.anthropic.com/news", "source": "Anthropic", "tags": ["AI"], "note": "Claude 와 회사 소식.", "added": "2026-11-22"},
+ {"title": "Claude 문서", "url": "https://docs.claude.com/", "source": "Anthropic", "tags": ["AI", "도구"], "note": "Claude 와 Claude Code 사용법.", "added": "2026-11-22"},
+ {"title": "Simon Willison's Weblog", "url": "https://simonwillison.net/", "source": "simonwillison.net", "tags": ["AI"], "note": "LLM 도구를 직접 써 보며 남기는 기록.", "added": "2026-11-22"},
+ {"title": "GitHub Pages 문서", "url": "https://docs.github.com/en/pages", "source": "GitHub", "tags": ["도구"], "note": "이 사이트를 올린 곳의 사용법.", "added": "2026-11-22"},
+ {"title": "Google Fonts — Archivo", "url": "https://fonts.google.com/specimen/Archivo", "source": "Google Fonts", "tags": ["디자인"], "note": "폭(WDTH)을 바꿀 수 있는 글꼴. 이 사이트의 큰 영문.", "added": "2026-11-22"},
+ {"title": "MDN — CSS 애니메이션", "url": "https://developer.mozilla.org/ko/docs/Web/CSS/CSS_animations/Using_CSS_animations", "source": "MDN", "tags": ["디자인", "도구"], "note": "움직임을 만드는 기본기.", "added": "2026-11-22"},
+ {"title": "cubic-bezier.com", "url": "https://cubic-bezier.com/", "source": "cubic-bezier.com", "tags": ["디자인"], "note": "움직임 곡선을 눈으로 맞춰 보는 도구.", "added": "2026-11-22"}
+]
