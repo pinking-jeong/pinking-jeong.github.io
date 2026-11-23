@@ -1,58 +1,46 @@
 {
- "updated": "2026.11.22 09:27",
+ "updated": "2026.11.23 10:34",
  "items": [
   {
-   "title": "Inkling-2-Mini in 5.4 GB Memory",
-   "link": "https://github.com/ShinMegamiBoson/lookatmyquant",
+   "title": "Select Styling Specimens",
+   "link": "https://simonwillison.net/2026/Nov/22/select-styling/",
+   "source": "Simon Willison",
+   "date": "2026.11.23"
+  },
+  {
+   "title": "What Happened to Silicon Valley?",
+   "link": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+   "source": "Hacker News",
+   "date": "2026.11.23"
+  },
+  {
+   "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+   "link": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
+   "source": "Hacker News",
+   "date": "2026.11.23"
+  },
+  {
+   "title": "Perplexity and Intelligence",
+   "link": "https://openai.com/index/perplexity-and-intelligence/",
+   "source": "Hacker News",
+   "date": "2026.11.23"
+  },
+  {
+   "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+   "link": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
    "source": "Hacker News",
    "date": "2026.11.22"
   },
   {
-   "title": "Lean verification of the Riemann Hypothesis",
-   "link": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-   "source": "Hacker News",
-   "date": "2026.11.21"
-  },
-  {
-   "title": "Detonating a pile of lead azide",
-   "link": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
-   "source": "Hacker News",
-   "date": "2026.11.21"
-  },
-  {
-   "title": "My monitor was cutting my download speed by 75%",
-   "link": "https://blog.tymscar.com/posts/studiodisplayethernet/",
-   "source": "Hacker News",
-   "date": "2026.11.21"
-  },
-  {
-   "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
-   "link": "https://news.ycombinator.com/item?id=50583761",
-   "source": "Hacker News",
-   "date": "2026.11.21"
-  },
-  {
-   "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
-   "link": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
-   "source": "Hacker News",
-   "date": "2026.11.21"
-  },
-  {
-   "title": "Inkling 2 Mini",
-   "link": "https://thinkingmachines.ai/news/inkling-2-mini/",
-   "source": "Hacker News",
-   "date": "2026.11.21"
+   "title": "Muru",
+   "link": "https://simonwillison.net/2026/Nov/21/muru/",
+   "source": "Simon Willison",
+   "date": "2026.11.22"
   },
   {
    "title": "Quoting Ravi Vakil",
    "link": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
    "source": "Simon Willison",
-   "date": "2026.11.21"
-  },
-  {
-   "title": "Hurried Announcement: Alessandro Masullo GRH",
-   "link": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
-   "source": "Hacker News",
    "date": "2026.11.21"
   },
   {
@@ -92,21 +80,9 @@
    "date": "2026.11.19"
   },
   {
-   "title": "datasette-arrows 0.1a0",
-   "link": "https://simonwillison.net/2026/Nov/18/datasette-arrows/",
-   "source": "Simon Willison",
-   "date": "2026.11.19"
-  },
-  {
    "title": "North Korea Shows Off an AI Chatbot",
    "link": "https://www.38north.org/2026/11/north-korea-shows-off-an-ai-chatbot/",
    "source": "38 North",
-   "date": "2026.11.19"
-  },
-  {
-   "title": "Quoting Daniel Stenberg",
-   "link": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
-   "source": "Simon Willison",
    "date": "2026.11.19"
   },
   {
