@@ -1,35 +1,89 @@
 {
- "updated": "2026.11.23 10:34",
+ "updated": "2026.11.24 14:16",
  "items": [
+  {
+   "title": "datasette-agent 0.7a1",
+   "link": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+   "source": "Simon Willison",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+   "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
+   "source": "Simon Willison",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
+   "link": "https://stalw.art/blog/microsoft-exchange-replacement/",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "VP ≠ VNP over Every Field",
+   "link": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Ladybird's first alpha release",
+   "link": "https://simonwillison.net/2026/Nov/23/ladybird/",
+   "source": "Simon Willison",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+   "link": "https://arm.jonpalmisc.com/",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Technology Companies Dominate Advertising at North Korean Football Matches",
+   "link": "https://www.38north.org/2026/11/tech-companies-dominate-advertising-at-north-korean-football-matches/",
+   "source": "38 North",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Kagi Mail (public beta)",
+   "link": "https://blog.kagi.com/kagi-mail-public-beta",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
+   "link": "https://twitter.com/ylecun/status/2124550037912920090",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Ladybird is now in alpha",
+   "link": "https://ladybird.org/posts/alpha/",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Nvidia Reinstates Jensen Huang as CEO",
+   "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+   "source": "Hacker News",
+   "date": "2026.11.23"
+  },
+  {
+   "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+   "link": "https://z.ai/blog/glm-5.4",
+   "source": "Hacker News",
+   "date": "2026.11.23"
+  },
+  {
+   "title": "datasette-charts 0.1a0",
+   "link": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
+   "source": "Simon Willison",
+   "date": "2026.11.23"
+  },
   {
    "title": "Select Styling Specimens",
    "link": "https://simonwillison.net/2026/Nov/22/select-styling/",
    "source": "Simon Willison",
    "date": "2026.11.23"
-  },
-  {
-   "title": "What Happened to Silicon Valley?",
-   "link": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
-   "source": "Hacker News",
-   "date": "2026.11.23"
-  },
-  {
-   "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
-   "link": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
-   "source": "Hacker News",
-   "date": "2026.11.23"
-  },
-  {
-   "title": "Perplexity and Intelligence",
-   "link": "https://openai.com/index/perplexity-and-intelligence/",
-   "source": "Hacker News",
-   "date": "2026.11.23"
-  },
-  {
-   "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
-   "link": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
-   "source": "Hacker News",
-   "date": "2026.11.22"
   },
   {
    "title": "Muru",
@@ -48,30 +102,6 @@
    "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
    "source": "Simon Willison",
    "date": "2026.11.21"
-  },
-  {
-   "title": "llm-gemini 0.38.1",
-   "link": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
-   "source": "Simon Willison",
-   "date": "2026.11.20"
-  },
-  {
-   "title": "Token fraud is here and it’s BAD (YouTube)",
-   "link": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
-   "source": "Simon Willison",
-   "date": "2026.11.20"
-  },
-  {
-   "title": "PostgreSQL 19 Released",
-   "link": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
-   "source": "Simon Willison",
-   "date": "2026.11.20"
-  },
-  {
-   "title": "llm-gemini 0.38",
-   "link": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
-   "source": "Simon Willison",
-   "date": "2026.11.19"
   },
   {
    "title": "The Two Koreas Need a ‘Good Divorce’",
@@ -138,12 +168,6 @@
    "link": "https://www.38north.org/2026/10/north-korea-continues-installing-new-fencing/",
    "source": "38 North",
    "date": "2026.10.29"
-  },
-  {
-   "title": "How War Memorialization Legitimizes the Russia-DPRK Alliance and Strengthens Kim Jong Un’s Legitimacy",
-   "link": "https://www.38north.org/2026/10/how-war-memorialization-legitimizes-the-russia-dprk-alliance-and-strengthens-kim-jong-uns-legitimacy/",
-   "source": "38 North",
-   "date": "2026.10.28"
   },
   {
    "title": "How Nuclear Security Can Help Bring the US and China Together on AI",
