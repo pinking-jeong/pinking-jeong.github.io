@@ -1,6 +1,48 @@
 {
- "updated": "2026.11.24 14:16",
+ "updated": "2026.11.25 13:05",
  "items": [
+  {
+   "title": "Three LLM inflection points in twelve months",
+   "link": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "source": "Simon Willison",
+   "date": "2026.11.25"
+  },
+  {
+   "title": "Ternary Bonsai 2.5 27B",
+   "link": "https://prismml.com/news/bonsai-2-5-27b",
+   "source": "Hacker News",
+   "date": "2026.11.25"
+  },
+  {
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "link": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+   "source": "Simon Willison",
+   "date": "2026.11.25"
+  },
+  {
+   "title": "GTA 6 Running on Windows",
+   "link": "https://twitter.com/raul_bs3/status/2125213756238291075",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "LLM agents work for their parent companies, not for you",
+   "link": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "Quad9 pulled their DNS service from France",
+   "link": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
+   "source": "Hacker News",
+   "date": "2026.11.24"
+  },
+  {
+   "title": "datasette-charts 0.2a0",
+   "link": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+   "source": "Simon Willison",
+   "date": "2026.11.24"
+  },
   {
    "title": "datasette-agent 0.7a1",
    "link": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
@@ -14,27 +56,9 @@
    "date": "2026.11.24"
   },
   {
-   "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
-   "link": "https://stalw.art/blog/microsoft-exchange-replacement/",
-   "source": "Hacker News",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "VP ≠ VNP over Every Field",
-   "link": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
-   "source": "Hacker News",
-   "date": "2026.11.24"
-  },
-  {
    "title": "Ladybird's first alpha release",
    "link": "https://simonwillison.net/2026/Nov/23/ladybird/",
    "source": "Simon Willison",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
-   "link": "https://arm.jonpalmisc.com/",
-   "source": "Hacker News",
    "date": "2026.11.24"
   },
   {
@@ -42,36 +66,6 @@
    "link": "https://www.38north.org/2026/11/tech-companies-dominate-advertising-at-north-korean-football-matches/",
    "source": "38 North",
    "date": "2026.11.24"
-  },
-  {
-   "title": "Kagi Mail (public beta)",
-   "link": "https://blog.kagi.com/kagi-mail-public-beta",
-   "source": "Hacker News",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
-   "link": "https://twitter.com/ylecun/status/2124550037912920090",
-   "source": "Hacker News",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "Ladybird is now in alpha",
-   "link": "https://ladybird.org/posts/alpha/",
-   "source": "Hacker News",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "Nvidia Reinstates Jensen Huang as CEO",
-   "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-   "source": "Hacker News",
-   "date": "2026.11.23"
-  },
-  {
-   "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
-   "link": "https://z.ai/blog/glm-5.4",
-   "source": "Hacker News",
-   "date": "2026.11.23"
   },
   {
    "title": "datasette-charts 0.1a0",
@@ -86,22 +80,10 @@
    "date": "2026.11.23"
   },
   {
-   "title": "Muru",
-   "link": "https://simonwillison.net/2026/Nov/21/muru/",
-   "source": "Simon Willison",
+   "title": "The Spray Bottle",
+   "link": "https://mechanical-pencil.com/products/spray-bottle",
+   "source": "Hacker News",
    "date": "2026.11.22"
-  },
-  {
-   "title": "Quoting Ravi Vakil",
-   "link": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
-   "source": "Simon Willison",
-   "date": "2026.11.21"
-  },
-  {
-   "title": "Quoting Levent Alpöge",
-   "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
-   "source": "Simon Willison",
-   "date": "2026.11.21"
   },
   {
    "title": "The Two Koreas Need a ‘Good Divorce’",
@@ -194,6 +176,12 @@
    "date": "2026.10.13"
   },
   {
+   "title": "Supporting Children's Health Using Nuclear Techniques",
+   "link": "http://www.iaea.org/newscenter/news/supporting-childrens-health-using-nuclear-techniques",
+   "source": "IAEA",
+   "date": ""
+  },
+  {
    "title": "Update 376 – IAEA Director General Statement on Situation in Ukraine",
    "link": "http://www.iaea.org/newscenter/pressreleases/update-376-iaea-director-general-statement-on-situation-in-ukraine",
    "source": "IAEA",
@@ -232,12 +220,6 @@
   {
    "title": "IAEA Reviews Progress of Zambia’s Infrastructure Development for Nuclear Power",
    "link": "http://www.iaea.org/newscenter/pressreleases/iaea-reviews-progress-of-zambias-infrastructure-development-for-nuclear-power",
-   "source": "IAEA",
-   "date": ""
-  },
-  {
-   "title": "Update 375 – IAEA Director General Statement on Situation in Ukraine",
-   "link": "http://www.iaea.org/newscenter/pressreleases/update-375-iaea-director-general-statement-on-situation-in-ukraine",
    "source": "IAEA",
    "date": ""
   }
