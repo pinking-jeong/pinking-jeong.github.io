@@ -1,16 +1,58 @@
 {
- "updated": "2026.11.26 12:29",
+ "updated": "2026.11.27 12:35",
  "items": [
   {
-   "title": "Quoting Scott Aaronson",
-   "link": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+   "title": "AI made self-hosting fun again",
+   "link": "https://janlukas.blog/posts/ai-self-hosting",
+   "source": "Hacker News",
+   "date": "2026.11.27"
+  },
+  {
+   "title": "AMD-specific fork of llama.cpp",
+   "link": "https://devnull.land/amd-specific-llama-cpp",
+   "source": "Hacker News",
+   "date": "2026.11.27"
+  },
+  {
+   "title": "Quoting Jack Despain Zhou",
+   "link": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+   "source": "Simon Willison",
+   "date": "2026.11.27"
+  },
+  {
+   "title": "Tell HN: Happy Thanksgiving",
+   "link": "https://news.ycombinator.com/item?id=50655664",
+   "source": "Hacker News",
+   "date": "2026.11.26"
+  },
+  {
+   "title": "Nextcloud Office Desktop app",
+   "link": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+   "source": "Hacker News",
+   "date": "2026.11.26"
+  },
+  {
+   "title": "Intel One Mono font (2023)",
+   "link": "https://github.com/intel/intel-one-mono",
+   "source": "Hacker News",
+   "date": "2026.11.26"
+  },
+  {
+   "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+   "link": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
    "source": "Simon Willison",
    "date": "2026.11.26"
   },
   {
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "link": "https://github.com/lsernau/grh-lean",
-   "source": "Hacker News",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "link": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+   "source": "Simon Willison",
+   "date": "2026.11.26"
+  },
+  {
+   "title": "Quoting Scott Aaronson",
+   "link": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+   "source": "Simon Willison",
    "date": "2026.11.26"
   },
   {
@@ -20,28 +62,10 @@
    "date": "2026.11.26"
   },
   {
-   "title": "1Password Security Incident",
-   "link": "https://1password.com/blog/update-on-nov-2026-security-incident",
-   "source": "Hacker News",
+   "title": "datasette-charts 0.3a0",
+   "link": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+   "source": "Simon Willison",
    "date": "2026.11.26"
-  },
-  {
-   "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-   "link": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
-   "source": "Hacker News",
-   "date": "2026.11.26"
-  },
-  {
-   "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-   "link": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
-   "source": "Hacker News",
-   "date": "2026.11.25"
-  },
-  {
-   "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
-   "link": "https://github.com/xoxorwr/pw-loudness-eq",
-   "source": "Hacker News",
-   "date": "2026.11.25"
   },
   {
    "title": "Three LLM inflection points in twelve months",
@@ -56,26 +80,8 @@
    "date": "2026.11.25"
   },
   {
-   "title": "datasette-charts 0.2a0",
-   "link": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
-   "source": "Simon Willison",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "datasette-agent 0.7a1",
-   "link": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
-   "source": "Simon Willison",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
-   "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
-   "source": "Simon Willison",
-   "date": "2026.11.24"
-  },
-  {
-   "title": "Ladybird's first alpha release",
-   "link": "https://simonwillison.net/2026/Nov/23/ladybird/",
+   "title": "datasette-charts 0.2a1",
+   "link": "https://simonwillison.net/2026/Nov/24/datasette-charts-2/",
    "source": "Simon Willison",
    "date": "2026.11.24"
   },
@@ -84,12 +90,6 @@
    "link": "https://www.38north.org/2026/11/tech-companies-dominate-advertising-at-north-korean-football-matches/",
    "source": "38 North",
    "date": "2026.11.24"
-  },
-  {
-   "title": "datasette-charts 0.1a0",
-   "link": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
-   "source": "Simon Willison",
-   "date": "2026.11.23"
   },
   {
    "title": "The Two Koreas Need a ‘Good Divorce’",
@@ -182,6 +182,18 @@
    "date": "2026.10.13"
   },
   {
+   "title": "Update 377 – IAEA Director General Statement on Situation in Ukraine",
+   "link": "http://www.iaea.org/newscenter/pressreleases/update-377-iaea-director-general-statement-on-situation-in-ukraine",
+   "source": "IAEA",
+   "date": ""
+  },
+  {
+   "title": "IAEA Visitor Centre Launches Pilot Programme for High Schools",
+   "link": "http://www.iaea.org/newscenter/news/iaea-visitor-centre-launches-pilot-programme-for-high-schools",
+   "source": "IAEA",
+   "date": ""
+  },
+  {
    "title": "IAEA Publications: Nuclear Knowledge at Your Fingertips",
    "link": "http://www.iaea.org/newscenter/news/iaea-publications-nuclear-knowledge-at-your-fingertips",
    "source": "IAEA",
@@ -214,18 +226,6 @@
   {
    "title": "IAEA Reviews Bangladesh’s Nuclear and Radiological Emergency Preparedness and Response",
    "link": "http://www.iaea.org/newscenter/pressreleases/iaea-reviews-bangladeshs-nuclear-and-radiological-emergency-preparedness-and-response",
-   "source": "IAEA",
-   "date": ""
-  },
-  {
-   "title": "IAEA Director General's Introductory Statement to the Board of Governors",
-   "link": "http://www.iaea.org/newscenter/statements/iaea-director-generals-introductory-statement-to-the-board-of-governors-18-november-2026",
-   "source": "IAEA",
-   "date": ""
-  },
-  {
-   "title": "IAEA Mission to United Republic of Tanzania Finds Commitment to Strengthening Nuclear Security",
-   "link": "http://www.iaea.org/newscenter/pressreleases/iaea-mission-to-united-republic-of-tanzania-finds-commitment-to-strengthening-nuclear-security",
    "source": "IAEA",
    "date": ""
   }
