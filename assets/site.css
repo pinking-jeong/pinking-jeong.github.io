@@ -187,6 +187,11 @@ main{position:relative;z-index:1}
 .sec.ink .chip[aria-pressed=true]{background:var(--paper);color:var(--ink)}
 .search{width:100%;max-width:420px;border:0;border-bottom:var(--bw) solid currentColor;background:transparent;color:inherit;font:500 15px var(--f-mono);padding:10px 0;margin-bottom:18px;outline:none}
 .search::placeholder{color:inherit;opacity:.45}
+/* 잠긴 쪽의 비밀번호 칸(scripts/lock-page.mjs 가 만드는 쪽) — 입력 칸은 위 .search, 단추는 .pill 을 그대로 쓴다 */
+.lock{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin-top:clamp(24px,4vw,48px)}
+.lock label{flex-basis:100%}
+.lock .search{flex:1 1 240px;margin-bottom:0;font-size:18px;letter-spacing:.18em}
+.lock .lock-note{flex-basis:100%;margin:10px 0 0;text-transform:none;letter-spacing:.06em;opacity:.75}
 
 /* 알약 단추(자석) */
 .pill{display:inline-flex;align-items:center;gap:10px;border:var(--bw) solid currentColor;border-radius:999px;padding:14px 24px;text-decoration:none;font:700 12px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;background:transparent;color:inherit;cursor:pointer;transition:background .35s,color .35s}

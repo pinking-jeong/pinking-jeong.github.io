@@ -9,6 +9,7 @@
  {"title": "영변 지식그래프 대시보드", "kind": "데이터", "year": "2026", "url": "https://pinking-jeong.github.io/yongbyon-kg-dashboard/", "desc": "공개 자료를 지식그래프로 엮어 살펴보는 대시보드.", "tags": ["지식그래프", "OSINT"]},
  {"title": "항공권 특가 알림", "kind": "도구", "year": "2026", "url": "https://pinking-jeong.github.io/korea-flight-alert/", "desc": "원하는 노선의 특가를 지켜보다 알려 주는 작은 웹앱.", "tags": ["웹앱", "자동화"]},
  {"title": "우라늄 농축 시뮬레이터", "kind": "도구", "year": "2026", "url": "https://pinking-jeong.github.io/uesim/", "desc": "분리작업단위(SWU) 계산부터 캐스케이드 설계까지, 동위원소 분리 이론의 여섯 모듈을 값을 바꿔 가며 계산해 보는 인터랙티브 시뮬레이터.", "tags": ["시뮬레이터", "동위원소 분리"]},
+ {"title": "핵무기 지식 아카이브", "kind": "지식 아카이브", "year": "2026", "url": "", "desc": "핵무기에 관한 공개 문헌을 표제어별로 정리한 개인 지식 아카이브. 본문은 공개하지 않습니다.", "tags": ["비공개"]},
  {"title": "논문·보고서 자리", "kind": "글", "year": "—", "url": "", "desc": "공개해도 되는 논문·보고서를 여기에 적습니다. data/works.json 에 한 줄씩 넣으면 카드가 생깁니다.", "tags": ["예시"], "sample": true},
  {"title": "발표 자리", "kind": "발표", "year": "—", "url": "", "desc": "학회·세미나 발표를 여기에 정리합니다. 공개 전에 기관 대외활동 기준을 먼저 확인하세요.", "tags": ["예시"], "sample": true}
 ]
