@@ -1,16 +1,34 @@
 {
- "updated": "2026.11.27 12:35",
+ "updated": "2026.11.28 12:13",
  "items": [
   {
-   "title": "AI made self-hosting fun again",
-   "link": "https://janlukas.blog/posts/ai-self-hosting",
-   "source": "Hacker News",
-   "date": "2026.11.27"
+   "title": "datasette-charts 0.4a0",
+   "link": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+   "source": "Simon Willison",
+   "date": "2026.11.28"
   },
   {
-   "title": "AMD-specific fork of llama.cpp",
-   "link": "https://devnull.land/amd-specific-llama-cpp",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "link": "https://neuralnetworksanddeeplearning.com/",
    "source": "Hacker News",
+   "date": "2026.11.28"
+  },
+  {
+   "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+   "link": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+   "source": "Hacker News",
+   "date": "2026.11.28"
+  },
+  {
+   "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+   "link": "https://bouncemarket.minhanhday.com/",
+   "source": "Hacker News",
+   "date": "2026.11.28"
+  },
+  {
+   "title": "datasette-mcp 0.4",
+   "link": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+   "source": "Simon Willison",
    "date": "2026.11.27"
   },
   {
@@ -18,24 +36,6 @@
    "link": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
    "source": "Simon Willison",
    "date": "2026.11.27"
-  },
-  {
-   "title": "Tell HN: Happy Thanksgiving",
-   "link": "https://news.ycombinator.com/item?id=50655664",
-   "source": "Hacker News",
-   "date": "2026.11.26"
-  },
-  {
-   "title": "Nextcloud Office Desktop app",
-   "link": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
-   "source": "Hacker News",
-   "date": "2026.11.26"
-  },
-  {
-   "title": "Intel One Mono font (2023)",
-   "link": "https://github.com/intel/intel-one-mono",
-   "source": "Hacker News",
-   "date": "2026.11.26"
   },
   {
    "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
@@ -56,15 +56,15 @@
    "date": "2026.11.26"
   },
   {
-   "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-   "link": "https://scottaaronson.blog/?p=10379",
-   "source": "Hacker News",
-   "date": "2026.11.26"
-  },
-  {
    "title": "datasette-charts 0.3a0",
    "link": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
    "source": "Simon Willison",
+   "date": "2026.11.26"
+  },
+  {
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "link": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "source": "Hacker News",
    "date": "2026.11.26"
   },
   {
@@ -72,18 +72,6 @@
    "link": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
    "source": "Simon Willison",
    "date": "2026.11.25"
-  },
-  {
-   "title": "GPT 6.2 Astra Solves a Historical Mystery",
-   "link": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
-   "source": "Simon Willison",
-   "date": "2026.11.25"
-  },
-  {
-   "title": "datasette-charts 0.2a1",
-   "link": "https://simonwillison.net/2026/Nov/24/datasette-charts-2/",
-   "source": "Simon Willison",
-   "date": "2026.11.24"
   },
   {
    "title": "Technology Companies Dominate Advertising at North Korean Football Matches",
