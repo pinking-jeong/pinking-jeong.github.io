@@ -96,11 +96,15 @@
       scrub.setAttribute("aria-valuenow", t.toFixed(1)); scrub.setAttribute("aria-valuetext", `${tc(t)}, ${SCENES[k].name}`);
     }
     function frame(now) {
-      if (playing && inView) { if (last != null) t = (t + (now - last) / 1000) % DUR; last = now; render(); } else last = null;
+      if (playing && inView) {
+        if (last != null) { const next = t + Math.min(.1, (now - last) / 1000); if (next >= DUR) reel.dispatchEvent(new CustomEvent("pk:lap")); t = next % DUR; }   // 한 바퀴 돌았음을 알린다(자동 넘김 tour.js). 탭을 떠났다 돌아와도 한꺼번에 건너뛰지 않는다
+        last = now; render();
+      } else last = null;
       requestAnimationFrame(frame);
     }
     const setPlay = p => { playing = p; playBtn.textContent = p ? "❚❚ PAUSE" : "▶ PLAY"; playBtn.setAttribute("aria-label", p ? "멈춤" : "재생"); reel.classList.toggle("paused", !p); };
     playBtn.addEventListener("click", () => setPlay(!playing));
+    reel.addEventListener("pk:restart", () => { t = 0; last = null; setPlay(true); render(); });   // 자동 넘김이 처음부터 틀 때
     reel.addEventListener("keydown", e => { if (e.key === " " || e.key === "k") { e.preventDefault(); setPlay(!playing); }
       if (e.key === "ArrowRight") { t = Math.min(DUR - .01, t + SEG); render(); } if (e.key === "ArrowLeft") { t = Math.max(0, t - SEG); render(); } });
     screen.addEventListener("click", () => setPlay(!playing));

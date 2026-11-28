@@ -399,5 +399,6 @@
     scenes = $$("[data-scene]");
     watch(document); figs(); kinetic(); wdth(); counters(); tilt(); magnet(); hud();
     $$(".scramble").forEach(el => el.addEventListener("pointerenter", () => scramble(el)));
+    document.body.classList.add("pk-ready"); document.dispatchEvent(new CustomEvent("pk:ready"));   // 화면이 다 차려졌다는 신호(자동 넘김 tour.js 가 기다린다)
   });
 })();
