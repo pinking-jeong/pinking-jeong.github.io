@@ -65,7 +65,7 @@ body.on-ink .topbar .row{background:var(--ink);color:var(--paper);border-color:v
   body.menu-open .menu-btn{color:var(--paper)}
 }
 
-/* 자동 넘김 단추(자동 넘김이 도는 쪽의 위 막대 가운데) — ▶ 재생 · ❚❚ 멈춤. tour.js 가 넣는다 */
+/* 자동 넘김 단추(첫 쪽, 위 막대 가운데) — ▶ 재생 · ❚❚ 멈춤. tour.js 가 넣는다 */
 .topbar .row{position:relative}
 .auto-btn{position:absolute;left:50%;top:calc(50% - 7px);transform:translate(-50%,-50%);display:inline-flex;align-items:center;justify-content:center;
   min-width:36px;height:22px;padding:0 10px;border:var(--bw) solid currentColor;border-radius:999px;background:transparent;color:inherit;

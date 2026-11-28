@@ -1,5 +1,5 @@
-/* PINKING ARCHIVE — 자동 넘김. <body data-tour> 가 붙은 쪽에서만 돈다(첫 쪽 index.html · 모션 그래픽 샘플 motion.html).
-   첫 화면 애니메이션이 끝나면 장면([data-scene])을 하나씩 내려가며 보여 주고, 맨 아래에 닿으면 넘김 막을 치고 맨 위로 돌아온다.
+/* PINKING ARCHIVE — 자동 넘김(첫 쪽).
+   첫 화면 애니메이션이 끝나면 장면을 하나씩 내려가며 보여 주고, 맨 아래에 닿으면 넘김 막을 치고 첫 화면으로 돌아온다.
    직접 휠·터치·글쇠를 쓰거나 화면을 누르면 멈춘다. 그 밖의 까닭(Tab 이동·스크롤 막대·페이지 내 찾기 등)으로 화면이 옮겨져도 멈춘다.
    위 막대 가운데 단추(▶ 재생 · ❚❚ 멈춤)로 지금 보는 장면부터 다시 잇는다.
    config.js: autoScroll(켜고 끄기) · autoScrollLoop(첫 화면으로 돌아온 뒤 되풀이).
@@ -7,7 +7,7 @@
 (() => {
   const S = window.SITE || {};
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches || S.motion === false;
-  if (reduce || S.autoScroll === false || !document.body.hasAttribute("data-tour")) return;
+  if (reduce || S.autoScroll === false || document.body.dataset.page !== "home") return;
 
   const $ = (q, el = document) => el.querySelector(q);
   const $$ = (q, el = document) => [...el.querySelectorAll(q)];
