@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>모션 그래픽 샘플 — PINKING</title>
+<meta name="description" content="홈페이지를 만들며 시험한 모션 그래픽 장면 모음.">
+<meta property="og:title" content="모션 그래픽 샘플 — PINKING"><meta property="og:description" content="홈페이지를 만들며 시험한 모션 그래픽 장면 모음."><meta property="og:type" content="website">
+<meta name="theme-color" content="#EEEBE4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ccircle cx='22' cy='22' r='5' fill='%23FF5A36'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Black+Han+Sans&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/motion.css">
+<script src="config.js"></script>
+<script src="assets/site.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/tour.js" defer></script>
+</head>
+<body data-page="motion" data-tour>
+<main id="main">
+
+<section class="sec ink" data-scene>
+  <span class="bgnum" data-speed="-0.3" aria-hidden="true">00</span>
+  <div class="metaline"><span>WORKS — HOMEPAGE DESIGN</span><span>MOTION SAMPLES × 4</span></div>
+  <div class="head"><h1 class="big-ko" style="font-size:clamp(56px,11vw,170px)" data-reveal>모션 그래픽<span class="dot"></span></h1>
+    <p class="sub" style="word-break:keep-all" data-reveal><span class="serif">samples</span> — 홈페이지를 만들며 시험한 움직임 장면들. 홈페이지의 내용과는 따로, 디자인 견본으로 모아 둡니다.</p></div>
+</section>
+
+<section class="sec reel-sec" data-scene aria-label="쇼릴">
+  <div class="metaline"><span>SAMPLE 01 — SHOWREEL</span><span>PROMPT × 1 · 15.00 SEC</span></div>
+  <div class="reel" tabindex="0" aria-label="쇼릴 — 스페이스로 재생·멈춤, 좌우 화살표로 장면 이동">
+    <div class="screen">
+      <div class="crop" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="rmeta" aria-hidden="true"><span>CLAUDE — MOTION REEL '26</span><span class="rsc">SC 01 / 06</span></div>
+      <div class="scenes"></div>
+      <div class="rbottom" aria-hidden="true"><span class="rtc">00:00.00</span><span class="rbar"><b></b></span><span>15.00 SEC</span></div>
+    </div>
+    <div class="controls">
+      <button class="pill rplay" type="button">❚❚ PAUSE</button>
+      <div class="scrub" role="slider" tabindex="-1" aria-label="재생 위치" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><b></b></div>
+      <span class="rtime">00:00.00 / 00:15.00</span>
+    </div>
+  </div>
+</section>
+
+<section class="story" data-scene aria-label="스크롤 장면 — 내리는 만큼 진행">
+  <div class="story-pin">
+    <div class="metaline"><span>SAMPLE 02 — SCROLL STORY</span><span class="st-pct">SCROLL 000%</span></div>
+    <div class="st-stage">
+      <svg class="st-svg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path class="st-path" d="M0 540 C 260 540, 240 90, 500 90 S 760 470, 1000 130"/>
+        <circle class="st-dot" r="10" fill="var(--point)"/>
+      </svg>
+      <p class="st-word">모으고</p>
+      <p class="st-word">기록하고</p>
+      <p class="st-word">만들고</p>
+      <p class="st-word">나누고<span class="dot" aria-hidden="true"></span></p>
+      <div class="st-side"><span class="st-num">01 / 04</span>COLLECT → WRITE<br>→ WORKS → SHOP</div>
+    </div>
+    <div class="st-rail"><div class="st-track">
+      <a class="st-card" href="collect.html"><b>수집</b><span>01 COLLECT</span></a>
+      <a class="st-card" href="blog.html"><b>블로그</b><span>02 WRITE</span></a>
+      <a class="st-card" href="works.html"><b>성과물</b><span>03 WORKS</span></a>
+      <a class="st-card" href="shop.html"><b>상점</b><span>04 SHOP</span></a>
+      <span class="st-big" data-scroll-wdth aria-hidden="true">ARCHIVE</span>
+    </div></div>
+  </div>
+</section>
+
+<section class="kinetic ink on-ink-sec" data-scene aria-label="움직이는 글자">
+  <div class="k-meta"><span>SAMPLE 03 — KINETIC TYPE</span><span>SCROLL = SPEED</span></div>
+  <div class="k-row"><span>COLLECT ·</span><span>WRITE ·</span><span>WORKS ·</span><span>SHOP ·</span></div>
+  <div class="k-row out"><span>모으고 ·</span><span>쓰고 ·</span><span>만들고 ·</span><span>나누고 ·</span></div>
+  <div class="k-band"><div class="k-row"><span>MOTION ·</span><span>MOTION ·</span><span>MOTION ·</span></div></div>
+  <div class="k-row out"><span>ARCHIVE ·</span><span>ARCHIVE ·</span><span>ARCHIVE ·</span></div>
+  <div class="k-meta"><span>04 — 프레임이 움직입니다</span><span>120 BPM</span></div>
+</section>
+
+<section class="sec" data-scene>
+  <div class="metaline"><span>SAMPLE 04 — TYPE</span><span class="mono">MOVE POINTER →</span></div>
+  <div class="wdth-wrap"><span class="wdth-label">WDTH 62</span><div class="wdth" aria-label="TYPE">TYPE</div></div>
+  <p class="serif" style="font-size:clamp(28px,3.4vw,48px);margin:24px 0 0">in type, the width is a voice.</p>
+</section>
+</main>
+<noscript><p style="padding:40px">이 사이트는 자바스크립트를 켜야 내용이 보입니다.</p></noscript>
+</body>
+</html>

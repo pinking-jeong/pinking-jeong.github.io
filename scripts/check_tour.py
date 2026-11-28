@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""첫 쪽의 자동 넘김(assets/tour.js)을 크롬에서 실제 시간으로 돌려 확인한다(헤드리스 크롬 + 원격 디버깅, 맥 기준 경로).
+"""자동 넘김(assets/tour.js)을 크롬에서 실제 시간으로 돌려 확인한다(헤드리스 크롬 + 원격 디버깅, 맥 기준 경로).
 
-사용: uv run --no-project --with websocket-client python scripts/check_tour.py [사이트 폴더 또는 주소] [화면 저장 폴더] [--quick]
-- 아무것도 안 적으면 이 저장소를 임시 서버로 띄워 전 과정을 본다(한 바퀴 + 멈춤·다시 재생·단추 자리 등, 3분쯤).
+사용: uv run --no-project --with websocket-client python scripts/check_tour.py [사이트 폴더 또는 주소] [화면 저장 폴더] [--page=motion.html] [--quick]
+- 아무것도 안 적으면 이 저장소를 임시 서버로 띄워 index.html 의 전 과정을 본다(한 바퀴 + 멈춤·다시 재생·단추 자리 등, 2~3분).
+- --page 로 볼 쪽을 고른다(자동 넘김이 도는 쪽: index.html · motion.html). 쇼릴·스크롤 장면·글자 폭은 그 쪽에 있을 때만 본다.
 - https:// 주소를 적으면 그 주소를 연다. --quick 은 처음 10초(스스로 내려가는지, 휠에 멈추는지)만 본다.
 필요한 것: Google Chrome, websocket-client(위 명령이 임시로 받아 쓴다)."""
 import base64
@@ -25,6 +26,8 @@ STATE = """(() => { const q = s => document.querySelector(s), t = s => (q(s) || 
   return { y: Math.round(scrollY), max: Math.round(document.documentElement.scrollHeight - innerHeight), on: !!b && b.getAttribute("aria-pressed") === "true", name: b ? b.getAttribute("aria-label") : null,
     btn: b ? b.textContent : null, sc: t(".hud .sc"), reel: t(".rtime").slice(0, 8), story: t(".st-pct"), wdth: t(".wdth-label").slice(0, 8),
     wipe: (q(".wipe") || {}).className || "", heroIn: !!q(".hero.in"), loader: !!q(".loader") }; })()"""
+PARTS = """(() => { const has = s => !!document.querySelector(s);
+  return { scenes: document.querySelectorAll("[data-scene]").length, hero: has(".hero"), reel: has(".reel"), story: has(".story"), type: has(".wdth-wrap") }; })()"""
 RECTS = """(() => { const r = s => { const e = document.querySelector(s); if (!e) return null; const b = e.getBoundingClientRect(); return b.width && b.height ? [Math.round(b.left), Math.round(b.right), Math.round(b.top), Math.round(b.bottom)] : null; };
   const nav = document.querySelector(".topbar nav"), navShown = nav && getComputedStyle(nav).position !== "fixed";
   return { vw: document.documentElement.clientWidth, brand: r(".topbar .brand"), small: r(".topbar .brand small"), btn: r(".auto-btn"), right: navShown ? r(".topbar nav") : r(".menu-btn"), row: r(".topbar .row") }; })()"""
@@ -120,7 +123,8 @@ def main() -> int:
     out.mkdir(parents=True, exist_ok=True)
     server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Quiet, directory=source if "://" not in source else "."))
     threading.Thread(target=server.serve_forever, daemon=True).start()
-    url = source if "://" in source else f"http://127.0.0.1:{server.server_address[1]}/index.html"
+    page_name = next((a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--page=")), "index.html")
+    url = source if "://" in source else f"http://127.0.0.1:{server.server_address[1]}/{page_name}"
     print(f"여는 곳: {url} · 화면 저장: {out}")
     profile = tempfile.mkdtemp(prefix="tour-check-")
     chrome = subprocess.Popen([CHROME, "--headless=new", "--disable-gpu", f"--remote-debugging-port={PORT}", "--remote-allow-origins=*",
@@ -145,7 +149,7 @@ def main() -> int:
             print(f"\n결과: {len(results) - failed}/{len(results)} 통과")
             return 1 if failed else 0
 
-        print("== A. 처음 열기 → 맨 아래 → 첫 화면으로 돌아와 다시 시작 (1440×780)")
+        print("== A. 처음 열기 → 맨 아래 → 맨 위로 돌아와 다시 시작 (1440×780)")
         cdp.call("Page.navigate", url=url)
         time.sleep(0.4)
 
@@ -171,6 +175,7 @@ def main() -> int:
                     del shots[at]
             if looped(rows):
                 break
+        parts = cdp.js(PARTS)
         seen = sorted({r["sc"][:5] for r in rows if r["sc"]})
         bottom_i = next((i for i, r in enumerate(rows) if r["max"] > 0 and r["y"] >= r["max"] - 2), None)
         before_bottom = rows[: bottom_i + 1] if bottom_i is not None else rows
@@ -179,12 +184,15 @@ def main() -> int:
             check("단추가 생기고 재생 중에는 ❚❚ 표시", all(r["btn"] == "❚❚" for r in rows if r["on"]) and any(r["on"] for r in rows)),
             check("손대지 않아도 맨 아래까지 내려감", bottom_i is not None, f"{rows[bottom_i]['t']}초에 도착" if bottom_i is not None else f"끝 위치 {rows[-1]['y']}/{rows[-1]['max']}"),
             check("내려가는 동안 뒤로 가지 않음", all(b >= a - 2 for a, b in zip(ys, ys[1:]))),
-            check("아홉 장면을 모두 거침", len(seen) == 9, " ".join(seen)),
-            check("쇼릴을 끝까지 재생", any(r["reel"] >= "00:14.0" for r in rows), "본 가장 늦은 시각 " + max(r["reel"] for r in rows)),
-            check("스크롤 장면을 100%까지 훑음", any("100%" in r["story"] for r in rows)),
-            check("TYPE 글자 폭이 움직임", len({r["wdth"] for r in rows}) > 3, f"{len({r['wdth'] for r in rows})}가지 값"),
-            check("맨 아래에서 넘김 막을 치고 첫 화면으로 돌아와 다시 시작", looped(rows), f"전체 {rows[-1]['t']}초"),
+            check(f"장면 {parts['scenes']}개를 모두 거침", len(seen) == parts["scenes"], " ".join(seen)),
+            check("맨 아래에서 넘김 막을 치고 맨 위로 돌아와 다시 시작", looped(rows), f"전체 {rows[-1]['t']}초"),
         ]
+        if parts["reel"]:
+            results.append(check("쇼릴을 끝까지 재생", any(r["reel"] >= "00:14.0" for r in rows), "본 가장 늦은 시각 " + max(r["reel"] for r in rows)))
+        if parts["story"]:
+            results.append(check("스크롤 장면을 100%까지 훑음", any("100%" in r["story"] for r in rows)))
+        if parts["type"]:
+            results.append(check("TYPE 글자 폭이 움직임", len({r["wdth"] for r in rows}) > 3, f"{len({r['wdth'] for r in rows})}가지 값"))
         cdp.shot(out / "A_돌아온뒤.png")
 
         print("== B. 휠을 굴리면 멈춤")
@@ -260,7 +268,7 @@ def main() -> int:
         cdp.click_button()
         end = watch(cdp, 12.0, until=lambda rs: rs[-1]["y"] == 0 and not rs[-1]["on"])
         final = end[-1]
-        results.append(check("첫 화면으로 돌아와 멈춤", final["y"] == 0 and not final["on"] and final["heroIn"] and "gone" in final["wipe"],
+        results.append(check("맨 위로 돌아와 멈춤", final["y"] == 0 and not final["on"] and (final["heroIn"] or not parts["hero"]) and "gone" in final["wipe"],
                              f"y={final['y']} 단추 {final['btn']} 막 {final['wipe']}"))
         results.append(check("넘김 막이 실제로 덮였다가 걷힘", any("cover" in r["wipe"] for r in end)))
         cdp.js("window.SITE.autoScrollLoop = true")
@@ -273,7 +281,7 @@ def main() -> int:
         cdp.call("Input.dispatchMouseEvent", type="mouseWheel", x=700, y=400, deltaX=0, deltaY=-60)
         time.sleep(1.3)
         after = cdp.state()
-        results.append(check("막이 걷히고 그 자리에 멈춤", "cover" in mid[-1]["wipe"] and "gone" in after["wipe"] and not after["on"] and after["y"] > 1000,
+        results.append(check("막이 걷히고 그 자리에 멈춤", "cover" in mid[-1]["wipe"] and "gone" in after["wipe"] and not after["on"] and after["y"] > after["max"] * .5,
                              f"y={after['y']} 막 {after['wipe']}"))
 
         print("== G. 위 막대에서 단추가 다른 것과 겹치지 않는지")
