@@ -1,5 +1,7 @@
 [
  {"title": "모션 쇼릴", "kind": "홈페이지 디자인", "year": "2026", "url": "showreel.html", "desc": "프롬프트 하나로 만든 15초 쇼릴. MOTION · TIMING · SPACING · EASE · TYPE · SYSTEM 여섯 장면이 영상처럼 재생됩니다.", "tags": ["모션 그래픽", "HTML·CSS·JS"]},
+ {"title": "키네틱 타입", "kind": "홈페이지 디자인", "year": "2026", "url": "kinetic.html", "desc": "KINETIC TYPE — 스크롤 속도에 반응해 흐르는 글자 줄. 빨리 내릴수록 글자가 기울고 흐려집니다.", "tags": ["모션 그래픽", "HTML·CSS·JS"]},
+ {"title": "글자 폭 타입", "kind": "홈페이지 디자인", "year": "2026", "url": "type.html", "desc": "FIG. 05 TYPE — 포인터를 따라 글자 폭이 62에서 125까지 바뀌는 가변 글꼴 장면.", "tags": ["모션 그래픽", "HTML·CSS·JS"]},
  {"title": "대전 20초 애니메이션", "kind": "영상", "year": "2026", "url": "animation/daejeon-20s/", "desc": "대전의 실제 사진 여덟 장을 그림으로 옮기고, 그 그림을 이어 20초 영상으로 만든 과정과 결과.", "tags": ["애니메이션", "생성형 AI"]},
  {"title": "KINAC 30초 애니메이션", "kind": "영상", "year": "2026", "url": "animation/kinac-30s/", "desc": "실제 사진 열두 장을 그림으로 옮기고, 그 그림을 이어 30초 영상으로 만든 과정과 결과.", "tags": ["애니메이션", "생성형 AI"]},
  {"title": "HTML 발표자료 갤러리", "kind": "도구", "year": "2026", "url": "https://pinking-jeong.github.io/html-slides/", "desc": "직접 만든 HTML 발표자료를 모아 두고 브라우저에서 바로 넘겨 보는 갤러리.", "tags": ["HTML", "발표"]},
