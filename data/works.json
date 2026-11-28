@@ -1,4 +1,5 @@
 [
+ {"title": "훈민정음 읽기", "kind": "모션 그래픽", "year": "2026", "url": "hunminjeongeum.html", "desc": "훈민정음 언해본 서문을 여덟 장면, 약 34초로 읽는 움직이는 화면. 장면마다 다른 글자 효과로 옛글이 나타나고 아래에 현대어 풀이가 붙습니다.", "tags": ["옛한글", "HTML·Canvas"]},
  {"title": "모션 쇼릴", "kind": "홈페이지 디자인", "year": "2026", "url": "showreel.html", "desc": "프롬프트 하나로 만든 15초 쇼릴. MOTION · TIMING · SPACING · EASE · TYPE · SYSTEM 여섯 장면이 영상처럼 재생됩니다.", "tags": ["모션 그래픽", "HTML·CSS·JS"]},
  {"title": "키네틱 타입", "kind": "홈페이지 디자인", "year": "2026", "url": "kinetic.html", "desc": "KINETIC TYPE — 스크롤 속도에 반응해 흐르는 글자 줄. 빨리 내릴수록 글자가 기울고 흐려집니다.", "tags": ["모션 그래픽", "HTML·CSS·JS"]},
  {"title": "글자 폭 타입", "kind": "홈페이지 디자인", "year": "2026", "url": "type.html", "desc": "FIG. 05 TYPE — 포인터를 따라 글자 폭이 62에서 125까지 바뀌는 가변 글꼴 장면.", "tags": ["모션 그래픽", "HTML·CSS·JS"]},
